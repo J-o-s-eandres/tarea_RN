@@ -1,37 +1,87 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100hv;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 .container {
   display: flex;
-  width: 800px; /* Aumentar el ancho del contenedor para acomodar los divs */
-  height: 800px;
-  border: 1px solid black;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 800px;
+  height: auto;
+  /* border: 1px solid black; */
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-top: auto;
 }
 
 .main-div {
   width: 500px;
   height: 500px;
-  border: 1px solid blue;
-  margin-right:20px ;
+  /* border: 1px solid blue; */
+  margin-bottom: 20px;
 }
 
-.inner-div-container{
-    margin-left: 40px;
+.main-div img {
+  max-width: 480px;
+  max-height: 480px;
+  width: auto;
+  height: auto;
 }
 
+.inner-div-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
 
 .inner-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
-  border: 1px solid red;
-  margin: 10px;
-  margin-top: 0px;
+  /* border: 1px solid red; */
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
+.inner-div img {
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+}
 
-.inner-div:hover{
-  cursor: pointer;
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress {
+  width: 200px;
+  height: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  color: black;
+  font-weight: bold;
+}
+
+.progress-label {
+  font-weight: bold;
+  margin-right: 10px;
 }
